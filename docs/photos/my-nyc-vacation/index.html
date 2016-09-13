@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Conor">
+    <meta name="description" content="">
+    <meta name="generator" content="Hugo 0.16" />
+
+    
+    <title>my nyc vacation &middot; @conoro’s Conor&#39;s Microblog</title>
+
+    <link rel="stylesheet" href="http://conoroneill.name/css/weblog.css" media="screen" charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.14/css/lightgallery.min.css" type="text/css" />
+    
+
+
+    
+		<link href="http://conoroneill.name/index.xml" rel="alternate" type="application/rss+xml" title="Conor&#39;s Microblog" />
+		
+  </head>
+  <body class="site">
+
+<header>
+  <nav>
+    <h1><a href="/">@conoro</a>’s Conor&#39;s Microblog.</h1>
+    <div class="menu">
+      
+      <ul>
+        
+            <li>
+              <a href="/posts/">Posts</a>
+              
+                <a href="/posts/index.xml"><img src="/img/rss.svg" class="rss-icon" /></a>
+              
+            </li>
+        
+            <li>
+              <a href="/microposts/">Microposts</a>
+              
+                <a href="/microposts/index.xml"><img src="/img/rss.svg" class="rss-icon" /></a>
+              
+            </li>
+        
+            <li>
+              <a href="/photos/">Photos</a>
+              
+                <a href="/photos/index.xml"><img src="/img/rss.svg" class="rss-icon" /></a>
+              
+            </li>
+        
+        <li><a href="http://conroneill.com">About</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
+  <main class="content">
+    <article class="post">
+      <h2><a rel="full-article" href="http://conoroneill.name/photos/my-nyc-vacation/">my nyc vacation</a></h2>
+
+      <div class="postmeta">
+        
+        <time datetime="2016-09-13 06:28:02 &#43;0100 BST" pubdate="">September 13, 2016</time>
+        
+      </div>
+
+      <p>
+        
+      </p>
+    </article>
+  </main>
+
+<footer>
+  <div class="footer_text">
+      <div>
+        <h3>Hi, <a href="http://conroneill.com">I'm Conor</a></h3>
+        <p>
+          Here you can place a short bio about yourself. Place a `bio.html` file in your
+project directory under `layout/partials`. That will override this message.
+
+        </p>
+      </div>
+      <div>
+          <h3><a href="https://www.flickr.com/photos/bandon1/">Photo Stream</a></h3>
+          <div id="photos"></div>
+        </div>
+      </div>
+  </div>
+
+  
+    <div class="footer_copyright">
+      &copy; 2016 <a href="http://conroneill.com">Conor O&#39;Neill</a>
+       - Made in Bandon, Cork, Ireland
+    </div>
+  
+</footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.14/js/lightgallery-all.min.js" charset="utf-8"></script>
+    <script src="/js/weblog.js" charset="utf-8"></script>
+    
+
+    <script type="text/javascript">
+
+  
+  $(function() {
+    
+    $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?id=bandon1&format=json&jsoncallback=?", function(data) {
+      iweblog.application.displayImages(data, 8);
+    });
+  });
+
+</script>
+
+    
+  </body>
+</html>
+

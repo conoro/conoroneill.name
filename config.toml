@@ -1,0 +1,57 @@
+baseurl = "http://conoroneill.name/"
+languageCode = "en-us"
+title = "Conor's Microblog"
+theme = "internet-weblog"
+Paginate = 10
+disqusShortname = "conorbandon"
+publishdir = "docs"
+SectionPagesMenu = "main"
+
+[permalinks]
+  post="/:year/:month/:day/:slug/"
+
+[params]
+  RSSSections = [ "Posts", "Microposts", "Photos" ]
+  twitterName = "conoro"
+  githubName = "conoro"
+  description = "Quick posts that don't belong on conoroneill.com or conoroneill.net"
+  ShowCopyright = true
+  RSSEnabled = true
+  google_analytics = "UA-88610-1"
+  authorlocation = "Bandon, Cork, Ireland"
+  authorwebsite = "http://conoroneill.com"
+  bio= "Tech guy who likes running slowly"
+  googleAnalyticsUserID = "UA-88610-1"
+  linkedinName = "conoroneill"
+
+[[menu.main]]
+  name = "Posts"
+  weight = 1
+	identifier = "posts"
+  url = "/posts/"
+
+[[menu.main]]
+	name = "Microposts"
+	weight = 2
+	identifier = "microposts"
+	url = "/microposts/"
+
+[[menu.main]]
+	name = "Photos"
+	weight = 3
+	identifier = "photos"
+	url = "/photos/"
+
+  [author]
+	Handle = "conoro"
+	FirstName = "Conor"
+	LastName = "O'Neill"
+	AboutPage = "http://conroneill.com"
+	Location = "Bandon, Cork, Ireland"
+	FlickrID = "bandon1"
+
+[taxonomies]
+	tag = "tags"
+	category = "categories"
+	series = "series"
+	
